@@ -14,7 +14,6 @@ import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductSelector from "./ProductVariantSelector.tsx";
-import LiveCommerce from "$store/components/product/LiveCommerce.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -65,9 +64,6 @@ function ProductInfo({ page, layout }: Props) {
       <Breadcrumb
         itemListElement={breadcrumbList?.itemListElement.slice(0, -1)}
       />
-
-      <LiveCommerce liveID={"9BWfFBVZnWc"} />
-
       {/* Code and name */}
       <div class="mt-4 sm:mt-8">
         <div>
